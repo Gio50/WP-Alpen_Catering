@@ -1,0 +1,10 @@
+name: my-wordpress
+recipe: wordpress
+config:
+  webroot: wordpress
+  php: '7.4'
+  database: mysql:5.7
+proxy:
+  appserver:
+    - your-site.lndo.site
+    - 192.168.1.100:80  # Ersetze dies durch deine tatsächliche lokale IP
